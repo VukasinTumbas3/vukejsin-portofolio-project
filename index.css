@@ -1,0 +1,146 @@
+:root {
+  --base-gap-sm: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: space-around;
+  width: 50rem;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  font-family: "Roboto Mono";
+  font-size: 20px;
+  font-weight: bold;
+}
+.icon-img {
+  height: 25px;
+  width: 25px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1080deg);
+  }
+}
+.vukejso-img {
+  height: 600px;
+  width: 600px;
+  padding: 50px;
+  border-radius: 50%;
+  animation: rotate 1s ease-out 1;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--base-gap-sm);
+  font-size: 25px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-gap-sm);
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  gap: var(--base-gap-sm);
+}
+
+.vukejso-img:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
+  height: 50px;
+  width: 100px;
+  border-radius: 10%;
+}
+.vukejsocompjuter {
+  height: 500px;
+  width: 500px;
+  gap: var(--base-gap-sm);
+  border: 1px solid black;
+  margin: 16px;
+  border-radius: 10%;
+  transition: box-shadow 0.3s ease;
+}
+
+.vukejsocompjuter:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h2 {
+  font-size: 30px;
+  margin-left: 15px;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 18px;
+  margin-left: 15px;
+}
+
+.group-img {
+  height: 500px;
+  width: 500px;
+  margin-left: auto;
+  max-width: 100%;
+  height: auto;
+  gap: var(--base-gap-sm);
+  margin-top: 15px;
+  margin-right: 15px;
+  border-radius: 20%;
+  border: 1px solid black;
+  transition: box-shadow 0.3s ease;
+}
+
+.group-img:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.grouptxt-container {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+    padding: 30px;
+  }
+}
